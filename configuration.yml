@@ -1,0 +1,20 @@
+common:
+# defines the folder for the log files
+  logsFolderFullPath: './logs'
+
+Jobs:
+  - Name: databases
+    path: /mnt/d/Temp/databases
+    wildcard: '*'
+    method: lastdays
+    how_many_to_keep: 3
+  - Name: kontrahenci
+    path: /mnt/d/Temp/databases
+    wildcard: '*'
+    method: lastfiles
+    how_many_to_keep: 4
+
+
+
+
+  
